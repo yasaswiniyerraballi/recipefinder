@@ -1,0 +1,111 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.1)), url('https://cdn.vectorstock.com/i/preview-1x/06/77/food-recipe-background-on-black-chalkboard-vector-3650677.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+h1 {
+    color: #fff; /* Bright color */
+    margin-bottom: 30px;
+    font-weight: bold; /* Very bold */
+    font-size: 32px; /* Larger font size */
+}
+
+.search-container {
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 80px); /* Adjusted width for button */
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #3498db; /* Border color */
+    border-radius: 20px; /* Rounded border */
+    box-sizing: border-box;
+    background-color: #fff; /* Background color */
+    color: #333; /* Text color */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+#searchButton {
+    width: 80px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#searchButton:hover {
+    background-color: #2980b9;
+}
+
+.recipes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.recipe {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
+    transition: transform 0.3s ease;
+}
+
+.recipe:hover {
+    transform: translateY(-5px);
+}
+
+.recipe h2 {
+    font-size: 24px; /* Increased font size */
+    margin-bottom: 15px;
+    color: #222; /* Darkened text color */
+}
+
+.recipe img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
+}
+
+.recipe p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+.recipe a {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px; /* Increased padding */
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.recipe a:hover {
+    background-color: #2980b9;
+}
